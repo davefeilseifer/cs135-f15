@@ -101,7 +101,7 @@ include_directories(
 # )
 
 ## Declare a cpp executable
-add_executable(robot_commander robot_command.cc)
+add_executable(robot_commander_node robot_command.cc)
 
 
 ## Add cmake target dependencies of the executable/library
@@ -109,7 +109,7 @@ add_executable(robot_commander robot_command.cc)
 # add_dependencies(wanderer_node wanderer_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
- target_link_libraries(robot_commander
+ target_link_libraries(robot_commander_node
    ${catkin_LIBRARIES}
  )
 
