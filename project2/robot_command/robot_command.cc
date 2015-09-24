@@ -4,7 +4,12 @@
 #include <tf/transform_datatypes.h>
 #include <stdio.h>
 
+/*********************************/
+// these variables have the position and angle of the robots
+
 double robot_x, robot_y, robot_theta; // global variables that store the robot's state
+
+/*********************************/
 
 void odomCallback(const nav_msgs::Odometry::ConstPtr& msg); // cs135 can ignore, prototype for the odometry function
 
