@@ -2,7 +2,7 @@ CFLAGS=-Wall -O9 -std=c99 -Wno-unused-function
 LDFLAGS=
 LDLIBS= -lc -lopencv_core -lopencv_highgui -lopencv_imgproc
 
-all: solve_image 
+all: solve_image  make_steg
 
 clean:
 	rm *.o
